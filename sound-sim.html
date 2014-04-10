@@ -1,0 +1,33 @@
+<html>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="sound-sim.js"></script>
+  <link href="sound-sim.css" rel="stylesheet" type="text/css"></link>
+  <div id="sound-sim-container">
+	<div id="wavelength-container">
+	  <div id="wavelength-label">Wavelength (&lambda;):</div>
+	  <input id="wavelength-input" type="text" maxlength="14"/>
+	  <div id="wavelength-converted"></div>
+	  <select id="wavelength-units">
+	  	<option value="1">m</option>
+	  	<option value="0.001">mm</option>
+		<option value="0.000001">&micro;m</option>
+	  </select>
+	</div>
+	<div id="frequency-container">
+      <div id="frequency-label">Frequency (&nu;):</div>
+	  <input id="frequency-input" type="text" maxlength="14"/>
+      <div id="frequency-converted"></div>
+	  <select id="frequency-units">
+	  	<option value="1">Hz</option>
+		<option value="1000">kHz</option>
+		<option value="1000000">MHz</option>
+	  </select>
+	</div>
+	<div id="sound-slider-container">
+      <img id="wavelength-bg" src="acoustic-spectrum.jpg"></img>
+	  <div id="sound-slider">
+	  </div>
+	</div>
+  </div>
+</html>
